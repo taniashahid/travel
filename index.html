@@ -1,0 +1,968 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Website</title>
+   
+   <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <div class="site-wrapper">
+    <nav class="navbar navbar-expand-lg py-2 sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./assets/imgs/logo.webp" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Places</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      
+     
+        <div class="main-wrapper">
+        <div class="hero-section">
+          <div class="hero-img">
+            <div class="over-lay">
+              <div class="container">
+                <div class="overlay-inner">
+                  <h1>Enjoy vacation with  <span>v-travel</span> </h1>
+                  <p>Travel to the any corner of the world, without going around in circles.</p>
+                  
+    <!-- Button to open the modal -->
+     <div class="vt d-flex justify-content-end justify-content-center">
+      
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Book A Tour
+      </button>
+  
+    
+
+    <!-- Modal Structure -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"> <!-- This class centers the modal -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Book a Tour</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  
+                  
+                    <div class="row">
+                      <div class="col-md-12">
+                    
+                        <form action="">
+                          <div class="mb-3">
+                           
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+                           
+                          </div>
+                          <div class="mb-3">
+                    
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email">
+                          </div>
+                          <div class="mb-3">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>How Many Person?</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>How Many Days?</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                           
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                          </div>
+                        </form>
+                        
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Book Now</button>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                   
+                    <button type="button" class="btn-close  btn-primary">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+     </div>
+    </div>
+  </div>
+</div>
+</div><!-- hero-section -->
+
+</div><!-- main-wrapper -->
+
+
+
+     <section class="place py-3">
+      <div class="container">
+        <div class="row">
+       <div class="col-sm-12">
+        <div class="section-title">
+        <h2>Popular Tour Places</h2>
+        </div>
+       </div>
+        </div>
+        <div class="tour-place">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card h-100 border-0 p-4 ">
+                  <img src="./assets/imgs/place1.webp" class="card-img-top" alt="...">
+                  <div class="card-body tour-border">
+                    <h5 class="card-title">Cox's bazar sea beach</h5>
+                    <p>chitagong , bangladesh</p>
+                    <h4>$1290
+                      <span>$2300</span>
+                    </h4>
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card h-100 border-0 p-4">
+                  <img src="./assets/imgs/place1.webp" class="card-img-top" alt="...">
+                  <div class="card-body tour-border">
+                    <h5 class="card-title">Cox's bazar sea beach</h5>
+                    <p>chitagong , bangladesh</p>
+                    <h4>$1290
+                      <span>$2300</span>
+                    </h4>
+                  
+                  </div>
+                </div>
+              </div>    
+               <div class="swiper-slide">
+                <div class="card h-100 border-0 p-4">
+                  <img src="./assets/imgs/place1.webp" class="card-img-top" alt="...">
+                  <div class="card-body tour-border">
+                    <h5 class="card-title">Cox's bazar sea beach</h5>
+                    <p>chitagong , bangladesh</p>
+                    <h4>$1290
+                      <span>$2300</span>
+                    </h4>
+                  
+                  </div>
+                </div>
+              </div>     <div class="swiper-slide">
+                <div class="card h-100 border-0 p-4">
+                  <img src="./assets/imgs/place1.webp" class="card-img-top" alt="...">
+                  <div class="card-body tour-border">
+                    <h5 class="card-title">Cox's bazar sea beach</h5>
+                    <p>chitagong , bangladesh</p>
+                    <h4>$1290
+                      <span>$2300</span>
+                    </h4>
+                  
+                  </div>
+                </div>
+              </div>     <div class="swiper-slide">
+                <div class="card h-100 border-0 p-4">
+                  <img src="./assets/imgs/place1.webp" class="card-img-top" alt="...">
+                  <div class="card-body tour-border">
+                    <h5 class="card-title">Cox's bazar sea beach</h5>
+                    <p>chitagong , bangladesh</p>
+                    <h4>$1290
+                      <span>$2300</span>
+                    </h4>
+                  
+                  </div>
+                </div>
+              </div>     <div class="swiper-slide">
+                <div class="card h-100 border-0 p-4">
+                  <img src="./assets/imgs/place1.webp" class="card-img-top" alt="...">
+                  <div class="card-body tour-border">
+                    <h5 class="card-title">Cox's bazar sea beach</h5>
+                    <p>chitagong , bangladesh</p>
+                    <h4>$1290
+                      <span>$2300</span>
+                    </h4>
+                  
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+                 
+                  
+             
+     
+      
+         
+  
+        </div>
+      </div>
+     </section> <!-- place -->
+    
+        
+          <div class="company-logo py-4 my-4">
+          <div class="container">
+          <div class="owl-carousel owl-theme">
+            <div class="item"><h4><img src="./assets/imgs/c1.webp" alt=""></h4></div>
+            <div class="item"><h4><img src="./assets/imgs/c2.webp" alt=""></h4></div>
+            <div class="item"><h4><img src="./assets/imgs/c3.webp" alt=""></h4></div>
+            <div class="item"><h4><img src="./assets/imgs/c4.webp" alt=""></h4></div>
+            <div class="item"><h4><img src="./assets/imgs/c5.webp" alt=""></h4></div>
+            <div class="item"><h4><img src="./assets/imgs/c6.webp" alt=""></h4></div>
+          
+        </div>
+        </div>
+     </div>
+        <section class="about py-4 my-4">
+            <div class="container">
+          <div class="text d-flex justify-content-center">
+            <h2>who we are?</h2>
+          </div>
+
+          <div class="row py-3">
+            <div class="col-md-6">
+           <div class="about-img">
+            <img src="./assets/imgs/about.webp" alt="">
+           </div>
+            </div>
+            <div class="col-md-6">
+              <h3>We are Travel experts</h3>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.</p>
+              <button type="button" class="btn btn-warning">Learn More</button>
+            </div>
+          </div>
+
+        </div>
+        </section>
+
+        <section class="descript py-3">
+         <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-lg-4 ">
+
+              <div class="card icons h-100 border-0 p-4">
+                <i class="fa-solid fa-bookmark ms-3"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Personalized matching</h5>
+                  <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+     
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-lg-4">
+              <div class="card h-100 bg-white border-0 icons h-100 p-4">
+                <i class="fa-solid fa-cubes ms-3"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Personalized matching</h5>
+                  <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+     
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-lg-4">
+              <div class="card h-100 bg-white border-0  icons h-100 p-4">
+                <i class="fa-solid fa-box-archive  ms-3"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Personalized matching</h5>
+                  <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+     
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-lg-4 py-3">
+              <div class="card h-100 bg-white border-0  icons h-100 p-4">
+                <i class="fa-solid fa-chart-column  ms-3"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Personalized matching</h5>
+                  <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+     
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-lg-4 py-3">
+              <div class="card h-100 bg-white border-0  icons h-100 p-4">
+                <i class="fa-solid fa-umbrella  ms-3"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Personalized matching</h5>
+                  <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+     
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-lg-4 py-3">
+              <div class="card h-100 bg-white border-0  icons h-100 p-4">
+                <i class="fa-solid fa-users  ms-3"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Personalized matching</h5>
+                  <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+     
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+        </section>
+
+<section class="vedio-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="vedio-area-text">
+          <a href="https://www.youtube.com/watch?v=3mLo0foh1LA&list=PLnkHcDuPoB7XFqRMo8t6V7PpJfCcyS4ir">
+            <i class="fa-solid fa-play"></i>
+          </a>
+          <h2>Travelling Highlights</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="tour py-3">
+          <div class="container-fluid">
+          <div class="tour-text text-center">
+             <h2>Tour Gallery</h2>
+          </div>
+
+       
+           <div class="row">
+            <div class="col-md-4">
+              <div class="project-item">
+                <a href="">
+                  <img src="./assets/imgs/1.webp" alt="">
+                </a>
+                <div class="project-info">
+                <div class="project-overlay">
+                 <h2>Istanbul , Turkey</h2>
+                 </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-item">
+                <a href="">
+                  <img src="./assets/imgs/2 (1).webp" alt="">
+                </a>
+                <div class="project-info">
+                <div class="project-overlay">
+                 <h2>Istanbul , Turkey</h2>
+                </div>
+                </div>
+              </div>
+            </div>      
+            <div class="col-md-4">
+              <div class="project-item">
+                <a href="">
+                  <img src="./assets/imgs/3.webp" alt="">
+                </a>
+                <div class="project-info">
+                <div class="project-overlay">
+                 <h2>Istanbul , Turkey</h2>
+                </div>
+                </div>
+              </div>
+            </div>      
+            <div class="col-md-4 pt-2">
+              <div class="project-item">
+                <a href="">
+                  <img src="./assets/imgs/4.webp" alt="">
+                </a>
+                <div class="project-info">
+                <div class="project-overlay">
+                 <h2>Istanbul , Turkey</h2>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 pt-2">
+              <div class="project-item">
+                <a href="">
+                  <img src="./assets/imgs/4.webp" alt="">
+                </a>
+                <div class="project-info">
+                <div class="project-overlay">
+                 <h2>Istanbul , Turkey</h2>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 pt-2">
+              <div class="project-item">
+                <a href="">
+                  <img src="./assets/imgs/5 web.webp" alt="">
+                
+                <div class="project-info">
+                <div class="project-overlay">
+                 <h2>Istanbul , Turkey</h2>
+                </div>
+                </div>
+                </a>
+              </div>
+            </div>
+           </div>
+          </div>
+        </section>
+        
+  <section class="clients-section">
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h4>Happy Clients</h4>
+        </div>
+    </div>
+ 
+
+  <div class="clients-area">
+        <div class="swiper testiSwiper">
+          <div class="swiper-wrapper">
+           
+            <div class="swiper-slide">
+              <div class=" testimonial-sec ">
+               <div class="testi-section text-center bg-white">
+                <p>Nunc eu neque in nisl aliquet blandit. 
+                  Donec sodales velit at auctor mollis. Sed vitae placerat risus. 
+                  Etiam tincidunt ipsum nec ante vulputate iaculis mus.</p>
+               </div>
+                <div class=" tour-testi-footer">
+                  <h5>Katrina Kaif</h5>
+                  <p>Actress</p>
+                 </div> 
+              </div>
+            </div>
+            
+            
+            <div class="swiper-slide">
+              <div class=" testimonial-sec ">
+               <div class="testi-section text-center bg-white">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aspernatur itaque non molestias dolor est, accusamus voluptate aperiam reprehenderit expedita labore voluptatem laborum, tempore doloremque, tenetur possimus minus incidunt totam?</p>
+               </div>
+                <div class=" tour-testi-footer">
+                  <h5>Katrina Kaif</h5>
+                  <p>Actress</p>
+                 </div> 
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class=" testimonial-sec">
+               <div class="testi-section text-center bg-white">
+                <p>Nunc eu neque in nisl aliquet blandit. 
+                  Donec sodales velit at auctor mollis. Sed vitae placerat risus. 
+                  Etiam tincidunt ipsum nec ante vulputate iaculis mus.</p>
+               </div>
+                <div class=" tour-testi-footer">
+                  <h5>Katrina Kaif</h5>
+                  <p>Actress</p>
+                 </div> 
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class=" testimonial-sec  ">
+               <div class="testi-section text-center bg-white">
+                <p>Nunc eu neque in nisl aliquet blandit. 
+                  Donec sodales velit at auctor mollis. Sed vitae placerat risus. 
+                  Etiam tincidunt ipsum nec ante vulputate iaculis mus.</p>
+               </div>
+                <div class=" tour-testi-footer">
+                  <h5>Katrina Kaif</h5>
+                  <p>Actress</p>
+                 </div> 
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class=" testimonial-sec ">
+               <div class="testi-section text-center bg-white">
+                <p>Nunc eu neque in nisl aliquet blandit. 
+                  Donec sodales velit at auctor mollis. Sed vitae placerat risus. 
+                  Etiam tincidunt ipsum nec ante vulputate iaculis mus.</p>
+               </div>
+                <div class=" tour-testi-footer">
+                  <h5>Katrina Kaif</h5>
+                  <p>Actress</p>
+                 </div> 
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class=" testimonial-sec ">
+               <div class="testi-section text-center bg-white">
+                <p>Nunc eu neque in nisl aliquet blandit. 
+                  Donec sodales velit at auctor mollis. Sed vitae placerat risus. 
+                  Etiam tincidunt ipsum nec ante vulputate iaculis mus.</p>
+               </div>
+                <div class=" tour-testi-footer">
+                  <h5>Katrina Kaif</h5>
+                  <p>Actress</p>
+                 </div> 
+              
+     
+       </div>
+      
+       </div>
+       <div class="swiper-pagination"></div>  
+            </div>
+           
+        </div>
+      
+     </div>
+    
+    </div>
+                
+           
+</div>
+
+  
+  
+
+   
+ </div>
+
+  </section><!-- clients-section -->
+      
+
+
+
+
+
+
+
+
+
+<section class="team py-4">
+<div class="container">
+  <h2>
+    Professional Team
+  </h2>
+
+  <div class="row">
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100 border-0 p-4">
+        <img src="./assets/imgs/team1.webp" class="card-img-top team-img" alt="...">
+        <div class="card-body">
+          <h2 class="card-title text-center team-heading">Jonathon doe</h2>
+          <p  class="card-title text-center team-header">Taxi driver & traveler</p>
+          <p class="card-text text-center">I’d like to send you a sincere "thank you" for all of your assistance during my recent trip to Colorado.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100 border-0 p-4">
+        <img src="./assets/imgs/team2.webp" class="card-img-top team-img" alt="...">
+        <div class="card-body">
+          <h2 class="card-title text-center team-heading">Jonathon doe</h2>
+          <p  class="card-title text-center  team-header">Taxi driver & traveler</p>
+          <p class="card-text text-center">I’d like to send you a sincere "thank you" for all of your assistance during my recent trip to Colorado.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="card h-100 border-0 p-4">
+        <img src="./assets/imgs/team3.webp" class="card-img-top team-img" alt="...">
+        <div class="card-body">
+          <h2 class="card-title text-center team-heading">Jonathon doe</h2>
+          <p  class="card-title text-center  team-header">Taxi driver & traveler</p>
+          <p class="card-text text-center">I’d like to send you a sincere "thank you" for all of your assistance during my recent trip to Colorado.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<div>
+<div class="hero-section">
+  <div class="hero-img">
+    <div class="over-lay">
+      <div class="container">
+        <div class="overlay-inner">
+          <h1>are you still intarested to tour?</h1>
+          <p>We offer a wide range of procedures to help you get the perfect smile</p>
+          
+<!-- Button to open the modal -->
+<div class="vt d-flex justify-content-end justify-content-center">
+
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Book A Tour
+</button>
+
+
+
+<!-- Modal Structure -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered"> <!-- This class centers the modal -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Book a Tour</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          
+            <div class="row">
+              <div class="col-md-12">
+            
+                <form action="">
+                  <div class="mb-3">
+                   
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+                   
+                  </div>
+                  <div class="mb-3">
+            
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email">
+                  </div>
+                  <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>How Many Person?</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>How Many Days?</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                   
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                  </div>
+                </form>
+                
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Book Now</button>
+              </div>
+            </div>
+        </div>
+        
+        <div class="modal-footer">
+           
+            <button type="button" class="btn-close  btn-primary">Close</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><!-- hero-section -->
+</div>
+      
+<section class="contact-area">
+<div class="container">
+  <div class="row my-4">
+    <div class="col-sm-12">
+      <h2>Questions?</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-6">
+     <div class="d-flex  flex-column-reverse">
+      <div class="contact-icon">
+        <a href=""><i class="fa-solid fa-map  mt-4 me-3"></i></a>
+        <h3>our office:</h3>
+        <p class="ps-4 ms-2">Jurain,Dhaka Bangladesh</p>
+      </div>
+    
+    
+     </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="d-flex  flex-column-reverse">
+       <div class="contact-icon">
+        <a href="tel:09348732"><i class="fa-solid fa-phone mt-4 me-3"></i></a>
+         <h3>Contact number:</h3>
+         <p class="ps-4 ms-2">+1234321321</p>
+       </div>
+     
+     
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6">
+      <div class="d-flex  flex-column-reverse">
+       <div class="contact-icon">
+        <a href="mailto:taniashahid@123gmail.com"><i class="fa-solid fa-envelope  mt-4 me-3"></i></a>
+         <h3>Email us:</h3>
+         <p class="ps-4 ms-2">websitename@mail.com</p>
+       </div>
+     
+     
+      </div>
+     </div>
+  </div>
+  <div class="row py-4">
+    <div class="col-lg-4 col-md-6">
+      <form>
+        <div class="mb-3">
+         
+          
+          <input type="text" class="form-control  my-3 py-2" id="exampleFormControlInput1" placeholder="Your Name">
+        </div>
+      
+      </form>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <form>
+        <div class="mb-3">
+         
+          
+          <input type="text" class="form-control my-3 py-2" id="exampleFormControlInput1" placeholder="Your Name">
+        </div>
+      
+      </form>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <form>
+        <div class="mb-3">
+         
+          
+          <input type="text" class="form-control my-3 py-2" id="exampleFormControlInput1" placeholder="Your Name">
+        </div>
+      
+      </form>
+    </div>
+    <div class="col-lg-12">
+      <div class="mb-3">
+                   
+        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your Message" rows="6"></textarea>
+      </div>
+    </div>
+    
+  </div>
+  <div class="contact-form d-flex align-items-center justify-content-center">
+ <button type="button" class="btn btn-warning mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Send Message
+  </button> 
+  </div>
+</div>
+</section>
+
+<div class="footer-data">
+  
+      
+        <div class="footer-text text-center">
+          <h6>©Copyright | V-travel 2017.all right Reserved</h6>
+        </div>
+      
+    
+</div>
+ 
+
+  
+</footer>
+
+
+      <script src="./assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+      </div><!-- site-wrapper -->
+  
+             <script>
+              var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 10,
+                loop: true,
+                autoplay: {
+            delay: 3000, 
+            disableOnInteraction: false, 
+          },
+          
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                breakpoints: {
+                 0:  {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  520: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  648: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                  },
+                  950: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                  },
+                },
+              });
+            </script>
+          
+           <script>
+            var swiper = new Swiper(".testiSwiper", {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+              spaceBetween: 50,
+              loop: true,
+              autoplay: {
+          delay: 3000, 
+          disableOnInteraction: false, 
+        },
+        
+               navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+             },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              breakpoints: {
+               0:  {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                520: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                648: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                950: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+              },
+            });
+          </script>
+        
+        
+        
+  <script>
+ 
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+   items:4,
+   margin:15,
+   dots:false,
+   autoplay:true,
+   autoplayTimeout:1000
+})
+
+  }) 
+  
+  
+   
+ </script>
+<script>
+ 
+  $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+     items:3,
+     margin:15,
+     dots:false,
+     autoplay:true,
+     autoplayTimeout:1000
+  })
+  
+    })  
+    
+   </script> 
+  
+
+  
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 10,
+      loop: true,
+      autoplay: {
+  delay: 3000, 
+  disableOnInteraction: false, 
+},
+
+      navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+       0:  {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        520: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        648: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        950: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+
+
+  </body>
+</html>

@@ -1,0 +1,412 @@
+
+.navbar-brand img{
+    width: 120px;
+}
+.navbar{
+  
+     background: #262626; 
+   inset: 0;
+ 
+}
+
+.navbar.sticky.sticky-top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+   
+    box-shadow: 0 3px 6px rgba(130, 186, 0, 0.05);
+  
+}
+
+.navbar-nav .nav-item a{
+    
+    color: #fff;
+}
+.navbar-nav .nav-item a:hover{
+    color: chocolate;
+    
+}
+
+.navbar-nav .nav-item{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.hero-section{
+    position: relative;
+}
+
+.hero-img{
+    background-image: url(../imgs/mainbg.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 550px;
+}
+
+.hero-section .hero-img .over-lay{
+    width: 100%;
+    display: block;
+}
+
+.hero-img  .over-lay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+    
+} 
+.hero-section  .over-lay .overlay-inner{
+    max-width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translateY(-50%  -50%);
+}
+
+.overlay-inner h1{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 48px;
+    font-family: sans-serif;
+    font-weight: 700;
+
+}
+
+.overlay-inner h1 span{
+    color: chocolate;
+    
+}
+
+.overlay-inner p{
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-family: sans-serif;
+
+}
+
+
+.vt .btn{
+    display: inline-block;
+    color:#fff;
+    padding: 15px 35px;
+    border-radius: 20px;
+    border: 1px solid #FF9F1C;;
+    text-transform: uppercase;
+    margin-right: 16px;
+    background: #FF9F1C;;
+}
+
+/* .modal-body .btn-secondary{
+    padding-left: 2px;
+    padding-right: 2px;
+
+} */
+.modal-footer .btn-close {
+display: inline-block;
+padding: 12px 20px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: 400;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+
+cursor: pointer;
+
+background-image: none;
+border: 1px solid;
+border-radius: 4px;
+}
+ .company-logo{
+    background-color: #f9f9f9;
+ } 
+
+ .company-logo img{
+    width: 135px !important;
+ }
+.about{
+    background-color: #f9f9f9;
+}
+
+.about p{
+    font-family: sans-serif;
+}
+.about-img img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.about   .btn-warning{
+    color: #fff;
+    font-weight: 800;
+    border: 1px solid #FF9F1C;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 13px 30px;
+    font-family: sans-serif;
+}
+
+.icons {
+    background-color: #f9f9f9 !important;
+}
+
+.fa-solid{
+    color: #FF9F1C;
+    font-size: 32px;
+}
+
+.team-img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team-heading h2{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: sans-serif;
+    
+}
+
+.team-header h5{
+    font-size: 5px;
+}
+
+.contact-icon i{
+  float: left;
+}
+
+.contact-form button{
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.footer-text {
+    background-color: #1E1E1E;
+    color: #fff;
+    padding: 40px 0px;
+}
+
+/* .project-item img{
+    width: 100%;
+    transition: all ease-in-out 0.4s;
+    min-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-overlay h2{
+    color: #fff;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.project-item {
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+ .project-info  {
+ 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+    
+ }
+
+
+.project-overlay {
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 50%;
+    left: 50%; 
+}
+
+.project-item:hover img{
+    transform: scale(1.1);
+}
+.project-item:hover .project-info{
+    opacity: 1;
+} */
+
+
+.project-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: all ease-in-out 0.4s;
+    max-width: 100%;
+}
+
+.project-item{
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.project-info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+}
+
+.project-overlay{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.project-item:hover img{
+    transform: scale(1.1);
+}
+.project-item:hover .project-info{
+    opacity: 1;
+} 
+.project-overlay h2{
+    color: #fff;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+
+/* .tour-border{
+    background-color: #fff;
+} */
+
+
+.place{
+    background-color: #f9f9f9;
+}
+
+ .card{
+    background-color:#f9f9f9 ;
+} 
+
+.tour-border{
+    background-color: #fff;
+}
+.tour-border h5{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.tour-border p{
+    font-size: 15px;
+}
+
+.tour-border h4{
+    color: #FF9F1C;
+}
+
+.tour-border span {
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: sans-serif;
+    margin-left: 10px;
+    position: relative;
+}
+
+.tour-border span::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #000;
+    content: "";
+    margin-top: 10px;
+        
+}
+
+.vedio-area{
+    background: url(../imgs/youtube.webp);
+    padding: 200px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    /* background-attachment: fixed; */
+}
+
+.vedio-area-text{
+    text-align: center;
+}
+.vedio-area-text i{
+    font-size: 30px;
+    background: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+  
+}
+
+.vedio-area-text h2{
+    font-size: 28px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 400;
+    
+
+}
+
+.clients-section{
+    background-color: #FF9F1C;
+    
+}
+
+
+ .testimonial-sec{
+    margin-right: 30px;
+} 
+.testi-section{
+    position: relative;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    
+}
+
+.testi-section::before{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    background-color: #fff;
+    height: 56px;
+    width: 56px;
+    margin-left: -9px;
+    margin-left: 20px;
+    transform: rotate(45deg);
+}  
